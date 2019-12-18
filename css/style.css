@@ -1037,11 +1037,11 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 }
 
 .btn {
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 13px;
+  padding: 10px 25px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+  border-radius: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -1069,7 +1069,6 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 
 .btn-primary {
   background-color: #000000;
-  border: 1px solid transparent;
   color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1080,21 +1079,20 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 
 .btn-primary:hover {
   background-color: black;
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  -o-transform: scale(1.01);
-  transform: scale(1.01);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.btn-white {
+.btn-secondary {
   background-color: #fff;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
   color: #000000 !important;
-  padding: 10px 16px;
 }
 
-.btn-white:hover {
+.btn-secondary:hover {
   -webkit-transform: scale(1.03);
   -moz-transform: scale(1.03);
   -ms-transform: scale(1.03);
@@ -1104,17 +1102,17 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.392);
 }
 
-.btn-white--outline {
+.btn-secondary--outline {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
 
-.btn-white--outline span {
+.btn-secondary--outline span {
   font-size: 10px;
 }
 
-.btn-white--outline:hover {
+.btn-secondary--outline:hover {
   color: #000000;
   background-color: #fff;
 }
@@ -1190,10 +1188,53 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   font-size: 11px;
 }
 
+@media screen and (min-width: 992px) {
+  .newsletter .container {
+    max-width: 1350px !important;
+  }
+}
+
+.newsletter__content {
+  background-color: black;
+  padding: 25px 10px;
+}
+
+.newsletter__title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.newsletter__title span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.newsletter__input {
+  border: 1px solid white;
+  text-transform: lowercase;
+  background-color: transparent;
+  color: #fff;
+  padding: 11px 14px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.newsletter__input::placeholder {
+  color: #fff;
+}
+
+.newsletter__input:focus {
+  outline: none;
+}
+
 body {
   position: relative;
   margin: 0;
-  background-color: #FAFAFA;
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   font-weight: 300;
