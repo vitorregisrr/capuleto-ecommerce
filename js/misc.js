@@ -5,23 +5,33 @@
     new WOW().init();
     $('.lazy').lazyload();
 
-    //scroll top
-    var scrollTopBtn = $('.scroll-top');
 
+    const mainNav = $('#main-nav');
+    
     $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
-            scrollTopBtn.addClass('show');
+            mainNav.addClass('sticky');
         } else {
-            scrollTopBtn.removeClass('show');
+            mainNav.removeClass('sticky');
         }
     });
 
-    scrollTopBtn.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, '300');
-    });
+    // Validação newsletter
+    // $("#newsletter-form").validate({
+    //     rules: {
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         },
+    //     },
+    
+    //     messages: {
+    //         email: {
+    //             required: 'Precisamos saber seu email',
+    //             email: 'Email inválido'
+    //         }
+    //     }
+    // });
 
     window.dispatchEvent(new Event('resize'));
 

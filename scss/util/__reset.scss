@@ -30,3 +30,9 @@ b{
 button:focus{
     outline: none;
 }
+
+.container{
+    @media screen and (min-width: $bp-LG){
+        max-width: 1280px !important;
+    }
+}

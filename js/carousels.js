@@ -1,35 +1,36 @@
 (function () {
     'use strict';
 
-    // Home Carousel //
-    const homeCarousel = $(".owl-carousel.home-carousel");
-    homeCarousel.owlCarousel({
-        autoplay: true,
-        autoPlaySpeed: 5000,
-        autoPlayTimeout: 5000,
-        autoplayHoverPause: true,
-        loop: true,
+
+    // Produto Carousel //
+    const produtoCarousel = $(".owl-carousel.produto__slider-mobile__carousel");
+    produtoCarousel.owlCarousel({
+        loop: false,
         margin: 0,
         items: 1,
         center: true,
         dots: false,
-        nav: false,
+        nav: true,
         navText: [
-            "<i class='owl-nav chevron-left'>", "<i class='owl-nav chevron-right'>"
+            "<i class='owl-nav fa fa-chevron-left'>", "<i class='owl-nav fa fa-chevron-right'>"
         ],
         slideBy: "page",
+        dragEndSpeed: 700,
+        smartSpeed: 1e3,
         startPosition: 0,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn'
     });
 
-    homeCarousel.on('change.owl.carousel', function (event) {
-        var captions = $(this).find('[data-animated="true"]');
-        captions.removeClass('animated fadeInLeft');
-        setTimeout(() => {
-            captions.addClass('animated fadeInLeft');
-        }, 2)
-    });
+    // Product slider
+    $('.product-slider__preview__item').click(function () {
+        const parent = $(this).parent().parent();
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        parent.find('.product-slider__selected').hide();
+        parent.find('.product-slider__selected img').attr('src', $(this).data('image'));
+        parent.find('.product-slider__selected').fadeIn();
+    })
 
     window.dispatchEvent(new Event('resize'));
 })();
