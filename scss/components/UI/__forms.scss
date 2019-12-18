@@ -1,27 +1,17 @@
 .form-control{
     width: 100%;
-    background-color: #fff;
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.181);
-    padding: 15px 20px;
-    border-radius: 0 0 0 4px !important;
+    padding: 5px;
     border-radius: 0;
-    border: none;
+    border: 1px solid black;
     color: $color-secondary;
+    font-size: 13px;
     font-weight: 400;
     @include transition();
 
-    @media screen and (max-width: $bp-MD){
-        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.081);
-    }
-
-    &::placeholder{
-        color: rgba(88, 88, 88, 0.76);
-    }
-
-    &:focus, &:active{
+    &:focus{
+        box-shadow: none;
         outline: none;
-        border: none;
-        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.181);
+        border-color: black;
     }
 }
 

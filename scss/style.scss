@@ -34,3 +34,12 @@ body {
 html{
     overflow-x: hidden;
 }
+
+main{
+    padding-top: 192px;
+
+    @media screen and (max-width: $bp-LG){
+        padding-top: 154px;
+    }
+
+}

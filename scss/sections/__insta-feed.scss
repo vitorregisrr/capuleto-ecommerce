@@ -1,0 +1,31 @@
+.insta-feed {
+
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: $color-primary;
+        font-weight: 500;    
+        text-align: center;
+        margin-bottom: 20px;
+        
+        @media screen and (max-width: $bp-LG){
+            font-size: 15px;
+        }
+
+        i{
+            color: #686868;
+            width: 15px;
+            margin-top: 3px;
+            margin-right: 8px;
+        }
+    }
+
+    @media screen and (min-width: $bp-LG) {
+        .container {
+            max-width: 1588px !important;
+            padding: 0;
+        }
+    }
+}

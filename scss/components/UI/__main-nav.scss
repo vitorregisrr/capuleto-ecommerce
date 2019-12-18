@@ -1,7 +1,8 @@
 .main-nav {
+    position: fixed;
     background-color: #fff;
     width: 100%;
-    z-index: 5;
+    z-index: 8;
 
     &__content {
         display: flex;
@@ -13,6 +14,7 @@
         justify-content: center;
         align-items: center;
         padding: 16px 0;
+        @include transition();
 
         @media screen and (max-width: $bp-LG) {
             justify-content: space-between;
@@ -75,7 +77,12 @@
         &-bag {
             height: 22px;
             position: relative;
-            margin-left: 15px;
+            margin-left: 25px;
+            @include transition();
+
+            &:hover{
+                @include scale(1.1);
+            }
 
             .ico {
                 display: inline-block;
@@ -90,12 +97,12 @@
             .number {
                 position: absolute;
                 top: -5px;
-                right: -4px;
+                right: -7px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 18px;
-                height: 18px;
+                width: 15px;
+                height: 15px;
                 background-color: #fff;
                 color: $color-primary;
                 font-weight: 500;
@@ -188,7 +195,7 @@
                     height: 45px;
                     width: 130%;
                     background-color: #fff;
-                    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.15);
+                    box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.15);
 
                     &:focus,
                     &:active {
@@ -269,7 +276,7 @@
         text-transform: uppercase;
         font-size: 13px;
         font-weight: 500;
-        padding: 0 14px;
+        padding: 0 23px;
         white-space: nowrap;
         text-align: center;
         @include transition();
@@ -310,14 +317,13 @@
     }
 
     &.sticky {
-        position: fixed;
         animation: fadeInDown 0.5s;
 
         .main-nav__top {
             height: 0;
             padding: 0;
             overflow: hidden;
-            @include transition();
+            transition: none;
         }
     }
 }

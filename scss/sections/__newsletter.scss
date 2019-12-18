@@ -1,7 +1,7 @@
 .newsletter{
     .container{
         @media screen and (min-width: $bp-LG){
-            max-width: 1350px !important;
+            max-width: 1300px !important;
         }
     }
 
@@ -40,5 +40,11 @@
         &:focus{
             outline: none;
         }
+    }
+
+     .error{
+        font-size: 12px;
+        text-transform: lowercase;
+        margin-top: 3px;
     }
 }

@@ -3,7 +3,7 @@
 
 <head>
     <!-- partial:../partials/__head.html -->
-                                <meta charset="UTF-8">
+                    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Capuleto Beach Wear</title>
@@ -58,7 +58,7 @@
   <!-- Load FONT AWESOME -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-                              <!-- partial -->
+                  <!-- partial -->
 </head>
 
 <body class=" wow fadeIn">
@@ -68,7 +68,7 @@
         <div class="container">
             <div class="main-nav__top">
                 <a href="./index.html">
-                    <div class="main-nav__brand wow fadeIn">
+                    <div class="main-nav__brand wow fadeIn" data-wow-delay="0.2s">
                         <img src="../images/brands/capuleto.png" alt="Logo Capuleto"></div>
                 </a>
                 <button class="main-nav__toggler btn-transparent nav-toggler">
@@ -81,7 +81,7 @@
 
         <div class="main-nav__bottom">
 
-            <div class="container">
+            <div class="container wow fadeInUp">
                 <div class="main-nav__bottom-offset"></div>
                 <ul id="main-nav-menu" class="main-nav__menu wow fadeIn">
                     <button class="main-nav__close btn-transparent nav-toggler">
@@ -147,14 +147,14 @@
 
     <main>
         <section id="home" class="home">
-            <div class="container">
-                <h2 class="home__banner-verao">
+            <div class="container position-relative px-5 h-100">
+                <h2 class="home__banner-verao wow fadeIn" data-wow-delay="0.5s">
                     Verão 2020
                 </h2>
-                <div class="home__banner-more">
+                <div class="home__banner-more wow fadeIn" data-wow-delay="0.3s">
                     <div class="home__banner-more-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat necessitatibus perspiciatis
-                            dolore voluptates sapiente error architecto incidunt!
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet.
                         </p>
                         <a href="#" class="home__banner-more-link">
                             Saiba mais
@@ -162,11 +162,11 @@
                     </div>
                 </div>
 
-                <div class="home__banner-info">
-                    <div class="row px-5">
-                        <div class="col-lg-4">
-                            <div class="home__banner-info-item">
-                                <span class="ico-frete"></span>
+                <div class="home__banner-info wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row px-4 px-lg-5">
+                        <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                            <div class="home__banner-info-item wow fadeInUp">
+                                <img src="../images/ico/frete.png" class="ico" alt="Ícone representando frete">
                                 <div class="caption">
                                     <span class="title">Frete grátis</span>
                                     Para comprar acima de R$129,99
@@ -174,9 +174,10 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="home__banner-info-item">
-                                <span class="ico-card"></span>
+                        <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                            <div class="home__banner-info-item wow fadeInUp">
+                                <img src="../images/ico/credit-card.png" class="ico"
+                                    alt="Ícone representando cartão de crédito">
                                 <div class="caption">
                                     <span class="title">Parcelamento</span>
                                     Em até 10x s/ juros no cartão de crédito
@@ -184,9 +185,9 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="home__banner-info-item">
-                                <span class="ico-desconto"></span>
+                        <div class="col-6 col-lg-3">
+                            <div class="home__banner-info-item wow fadeInUp">
+                                <img src="../images/ico/desconto.png" class="ico" alt="Ícone representando desconto">
                                 <div class="caption">
                                     <span class="title">10% de desconto</span>
                                     Em depósito em conta ou boleto bancário
@@ -194,9 +195,9 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="home__banner-info-item">
-                                <span class="ico-sec"></span>
+                        <div class="col-6 col-lg-3">
+                            <div class="home__banner-info-item wow fadeInUp">
+                                <img src="../images/ico/seguranca.png" class="ico" alt="Ícone representando seguraça">
                                 <div class="caption">
                                     <span class="title">Site 100% seguro</span>
                                     Faça suas compras sem medo
@@ -208,140 +209,146 @@
             </div>
         </section>
 
-        <section id="novidades" class="section-wraper">
-            <div class="container">
-                <h3 class="inner-title">Novidades</h3>
+        <section id="novidades" class="section-wraper mt-5">
+            <div class="container mt-4">
+                <h3 class="inner-title wow fadeInUp mb-1">Novidades</h3>
                 <div class="row">
-
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <article class="product  wow fadeIn">
+                        <a href="#" class="product  wow fadeIn">
                             <a href="" class="product__fav active"></a>
                             <div class="product__img">
-                                <img src="../images/produtos/1.png" alt="Descrição do produto">
+                                <img class="lazy" src="../images/ico/loading.gif" data-src="../images/produtos/1.png" alt="Descrição do produto">
                                 <div class="product__more">
                                     <a href="../pages/produto.html" class="btn btn-primary">
                                         Adicionar à sacola
                                     </a>
                                 </div>
-                                <h4 class="product__title">
-                                    Maiô Vermelho Capuleto
-                                </h4>
-                                <span class="product__price">
-                                    R$540,00
-                                    <span class="discount">
-                                        ou 6x de R$99,99
-                                    </span>
-                                </span>
                             </div>
-                        </article>
+                            <a href="#" class="product__title">
+                                Maiô Vermelho Capuleto
+                            </a>
+                            <span class="product__price">
+                                R$540,00
+                                <span class="discount">
+                                    ou 6x de R$99,99
+                                </span>
+                            </span>
+                        </a>
                     </div>
 
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <article class="product  wow fadeIn">
+                        <a href="#" class="product  wow fadeIn">
                             <a href="" class="product__fav active"></a>
                             <div class="product__img">
-                                <img src="../images/produtos/2.png" alt="Descrição do produto">
+                                <img class="lazy" src="../images/ico/loading.gif" data-src="../images/produtos/2.png" alt="Descrição do produto">
                                 <div class="product__more">
                                     <a href="../pages/produto.html" class="btn btn-primary">
                                         Adicionar à sacola
                                     </a>
                                 </div>
-                                <h4 class="product__title">
-                                    Maiô Vermelho Capuleto
-                                </h4>
-                                <span class="product__price">
-                                    R$540,00
-                                    <span class="discount">
-                                        ou 6x de R$99,99
-                                    </span>
-                                </span>
                             </div>
-                        </article>
+                            <a href="#" class="product__title">
+                                Maiô Vermelho Capuleto
+                            </a>
+                            <span class="product__price">
+                                R$540,00
+                                <span class="discount">
+                                    ou 6x de R$99,99
+                                </span>
+                            </span>
+                        </a>
                     </div>
 
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <article class="product  wow fadeIn">
+                        <a href="#" class="product  wow fadeIn">
                             <a href="" class="product__fav active"></a>
                             <div class="product__img">
-                                <img src="../images/produtos/3.png" alt="Descrição do produto">
+                                <img class="lazy" src="../images/ico/loading.gif" data-src="../images/produtos/3.png" alt="Descrição do produto">
                                 <div class="product__more">
                                     <a href="../pages/produto.html" class="btn btn-primary">
                                         Adicionar à sacola
                                     </a>
                                 </div>
-                                <h4 class="product__title">
-                                    Maiô Vermelho Capuleto
-                                </h4>
-                                <span class="product__price">
-                                    R$540,00
-                                    <span class="discount">
-                                        ou 6x de R$99,99
-                                    </span>
-                                </span>
                             </div>
-                        </article>
+                            <a href="#" class="product__title">
+                                Maiô Vermelho Capuleto
+                            </a>
+                            <span class="product__price">
+                                R$540,00
+                                <span class="discount">
+                                    ou 6x de R$99,99
+                                </span>
+                            </span>
+                        </a>
                     </div>
 
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <article class="product  wow fadeIn">
+                        <a href="#" class="product  wow fadeIn">
                             <a href="#" class="product__fav active"></a>
                             <div class="product__img">
-                                <img src="../images/produtos/4.png" alt="Descrição do produto">
+                                <img class="lazy" src="../images/ico/loading.gif" data-src="../images/produtos/4.png" alt="Descrição do produto">
                                 <div class="product__more">
                                     <a href="../pages/produto.html" class="btn btn-primary">
                                         Adicionar à sacola
                                     </a>
                                 </div>
-                                <h4 class="product__title">
-                                    Maiô Vermelho Capuleto
-                                </h4>
-                                <span class="product__price">
-                                    R$540,00
-                                    <span class="discount">
-                                        ou 6x de R$99,99
-                                    </span>
-                                </span>
                             </div>
-                        </article>
+                            <a href="#" class="product__title">
+                                Maiô Vermelho Capuleto
+                            </a>
+                            <span class="product__price">
+                                R$540,00
+                                <span class="discount">
+                                    ou 6x de R$99,99
+                                </span>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="sugestoes" class="sugestoes section-wraper">
+        <section id="sugestoes" class="sugestoes section-wraper mt-lg-4 pt-0">
             <div class="container">
                 <h3 class="inner-title color-lighter">Nossas Sugestões</h3>
 
                 <div class="sugestoes__list wow fadeIn" data-wow-delay="0.3s">
                     <a class="sugestoes__item" href="#">
-                        <img src="../images/sugestoes/1.png" alt="Produto">
+                        <img class="lazy" src="../images/ico/loading.gif" data-src="../images/sugestoes/1.png" alt="Produto">
                     </a>
 
                     <a class="sugestoes__item" href="#">
-                        <img src="../images/sugestoes/2.png" alt="Produto">
+                        <img class="lazy" src="../images/ico/loading.gif" data-src="../images/sugestoes/2.png" alt="Produto">
                     </a>
 
                     <a class="sugestoes__item" href="#">
-                        <img src="../images/sugestoes/3.png" alt="Produto">
+                        <img class="lazy" src="../images/ico/loading.gif" data-src="../images/sugestoes/3.png" alt="Produto">
                     </a>
 
                     <a class="sugestoes__item" href="#">
-                        <img src="../images/sugestoes/4.png" alt="Produto">
+                        <img class="lazy" src="../images/ico/loading.gif" data-src="../images/sugestoes/4.png" alt="Produto">
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="insta-feed" class="insta-feed">
+        <section id="insta-feed" class="insta-feed wow fadeInUp">
             <div class="container">
-
+                <h3 class="insta-feed__title">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    @capuletobeachwear
+                </h3>
+                <div id="feed">
+                    <img class="w-100" src="../images/banners/feed.jpg" alt="">
+                </div>
             </div>
         </section>
     </main>
     <button class="scroll-top"></button>
 
     <!-- partial:../partials/__footer.html -->
-    <aside id="newsletter" class="newsletter wow fadeInUp">
+    <div id="filtros-backdrop" class="produtos-pg__dropdown-filters-backdrop"></div>
+<aside id="newsletter" class="newsletter wow fadeInUp">
     <div class="container">
         <form id="newsletter-form" method="" action="" class="row justify-content-center newsletter__content">
             <div class="col-md-4 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start">
@@ -353,14 +360,14 @@
                 </h4>
             </div>
             <div class="col-md-4 col-lg-3 mb-2 mb-md-0">
-                <input type="text" class="newsletter__input" placeholder="Digite seu e-mail">
+                <input name="email" type="text" class="newsletter__input" placeholder="Digite seu e-mail">
             </div>
             <div class="col-md-3 col-lg-2">
                 <button class="btn btn-secondary w-100" type="submit">Cadastrar</button>
             </div>
         </form>
     </div>
-    </aside>
+</aside>
 <footer class="footer wow fadeIn" data-wow-delay="0.5">
     <div class="container">
         <div class="row">
@@ -370,8 +377,8 @@
                     <li><a href="#">A Marca</a></li>
                     <li>Redes sociais</li>
                     <li>
-                        <a href="#"> <i class="fab fab-facebook-f"></i></a>
-                        <a href="#"><i class="fab fab-instagram"></i></a>
+                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
@@ -420,7 +427,8 @@
                 <ul class="footer__list">
                     <li class="title"> Pagamento</li>
                     <li>
-                        <img style="width: 120px" src="../images/brands/cards.png" alt="Ícones de métodos de pagamentos aceitos">
+                        <img style="width: 120px" src="../images/brands/cards.png"
+                            alt="Ícones de métodos de pagamentos aceitos">
                     </li>
                 </ul>
             </div>
@@ -437,17 +445,18 @@
         </div>
 
         <hr />
-        
+
         <div class="row justify-content-center pt-2 pt-lg-4">
             <div class="col-7 col-md-5 col-lg-2 mb-3 mb-lg-0">
                 <img class="w-100" src="../images/brands/capuleto2.png" alt="Logo capuleto">
             </div>
-            
+
             <div class="col-12 col-lg-10">
                 <p class="footer__copyright text-center text-lg-left">
                     Caso haja divergências de valores dos produtos no site, o preço válido é o do carrinho de compras.
                     Vendas sujeitas a confirmação de estoque, análise e validação dos dados.
-                    Copyright © 2019. CAPULETO BEACH WEAR - CNPJ: 00.000.000/0000-00. Rua XXXXXXXXXXX, 000 - XXXXXXXXX/XX-
+                    Copyright © 2019. CAPULETO BEACH WEAR - CNPJ: 00.000.000/0000-00. Rua XXXXXXXXXXX, 000 -
+                    XXXXXXXXX/XX-
                     CEP: 00.000-00
                 </p>
             </div>
