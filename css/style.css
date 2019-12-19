@@ -1122,6 +1122,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   color: black;
+  z-index: 2;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
