@@ -2,6 +2,10 @@
     &__info {
         color: black;
 
+        @media screen and (min-width: $bp-LG){
+            margin-bottom: 60px;
+        }
+
         &-name{
             font-size: 20px;
             text-transform: uppercase;
@@ -78,11 +82,19 @@
         &-opt-item{
             display: flex;
 
+            &:hover{
+                img{
+                    opacity: 1;
+                }
+            }
+
             img{
                 width: 85px;
                 height: 94px;
                 object-fit: cover;
                 margin-right: 25px;
+                opacity: .8;
+                @include transition();
             }
         }
     }

@@ -76,7 +76,7 @@
             font-size: 14px;
             font-weight: 600;
             text-transform: uppercase;
-            padding-left: 58px;
+            padding-left: 63px;
             color: black;
             @include transition();
 
@@ -91,8 +91,8 @@
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
-                height: 1px;
-                width: 40px;
+                height: 0.7px;
+                width: 44px;
                 background-color: black;
             }
         }
