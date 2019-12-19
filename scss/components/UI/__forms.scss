@@ -1,4 +1,4 @@
-.form-control{
+.form-control {
     width: 100%;
     padding: 5px;
     border-radius: 0;
@@ -8,54 +8,41 @@
     font-weight: 400;
     @include transition();
 
-    &:focus{
+    &:focus {
         box-shadow: none;
         outline: none;
         border-color: black;
     }
 }
 
-textarea.form-control{
+.form-black{
+    padding-left: 14px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.form-quantity {
+    width: 68px;
+    height: 48px;
+    border-color: #CCCC;
+    padding: 5px 8px 5px 13px;
+    font-weight: 500;
+    color: black !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}   
+
+textarea.form-control {
     height: auto;
 }
 
-.form-labeled{
-    position: relative;
-
-    input{
-        padding-top: 21px;
-        padding-bottom: 10px;
-
-        @media screen and (max-width: $bp-MD){
-            font-size: 14px;
-            padding-top: 19px;
-            padding-bottom: 7px;
-        }
-    }
-
-    .input-name{
-        position: absolute;
-        top: 10px;
-        left: 20px;
-        color: $color-primary;
-        font-weight: 400;
-        font-size: 11px;
-        opacity: 0;
-        @include transition();
-
-        @media screen and (max-width: $bp-MD){
-            font-size: 10px;
-        }
-    }
-
-    input:focus ~ label, label.active{
-        top: 5px;
-        opacity: 1;
-    }
-}
-
-.form-group{
-    label.error{
+.form-group {
+    label.error {
         display: block;
         color: rgb(240, 80, 69);
         opacity: .8;

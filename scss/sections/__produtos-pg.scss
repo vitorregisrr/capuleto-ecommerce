@@ -90,15 +90,15 @@
             padding: 50px 30px 20px 30px;
             font-size: 12px;
 
-            .title{
+            .title {
                 font-size: 14px;
             }
 
-            hr{
+            hr {
                 width: 100%;
             }
 
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 left: 0;
             }
 
@@ -130,7 +130,7 @@
         }
     }
 
-    &__order{
+    &__order {
         display: flex;
         align-items: center;
         color: black;

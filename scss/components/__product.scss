@@ -1,8 +1,39 @@
 .product {
-    cursor: pointer;
     display: block;
+    position: relative;
     text-align: center !important;
     margin-bottom: 40px;
+
+    &__fav{
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        display: block;
+        color: black;
+        z-index: 2;
+        font-size: 16px;
+        opacity: 0;
+        @include transition();
+
+        i{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .fas{
+            opacity: 0;
+            @include transition();
+        }
+
+        &.active, &:hover{
+            color: black;
+
+            .fas{
+                opacity: 1;
+            }
+        }
+    }
 
     &__img {
         position: relative;
@@ -71,6 +102,12 @@
             &:hover{
                 @include scale(1.02);
             }
+        }
+    }
+
+    &:hover{
+        .product__fav{
+            opacity: 1;
         }
     }
 }

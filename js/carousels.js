@@ -3,7 +3,7 @@
 
 
     // Produto Carousel //
-    const produtoCarousel = $(".owl-carousel.produto__slider-mobile__carousel");
+    const produtoCarousel = $(".owl-carousel.produto-pg__slider-mobile__carousel");
     produtoCarousel.owlCarousel({
         loop: false,
         margin: 0,

@@ -261,53 +261,100 @@
 
                             <hr />
                             <!-- Radios de opções (cor/tamanho) -->
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p class="text-uppercase mb-0">Cores disponíveis</p>
-                                    <div class="d-flex py-1">
-                                        <!-- radio com uma cor só -->
-                                        <label class="radio-color">
-                                            <input type="radio" name="cor">
-                                            <div class="mask">
-                                                <span data-label="Amarelo" style="background-color: #F4DD9B"></span>
-                                            </div>
-                                        </label>
+                            <div class="row py-3">
+                                <div class="col-lg-12 mb-4">
+                                    <div class="produto-pg__info-opt-item">
+                                        <div>
+                                            <img src="../images/produtos/1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="text-uppercase mb-0 font-weight-medium">Tamanho Sutiã</p>
+                                            <div class="d-flex py-1 mb-1 mb-md-2">
+                                                <!-- radios de tamanho -->
+                                                <label for="tamanho_p" class="radio-text mr-2">
+                                                    <input type="radio" id="tamanho_p" name="tamanho" checked>
+                                                    <span class="mask">
+                                                        P
+                                                    </span>
+                                                </label>
 
-                                        <!-- radio com 2 cores (mudar as duas cores do gradient) -->
-                                        <label class="radio-color">
-                                            <input type="radio" name="cor">
-                                            <div class="mask">
-                                                <span data-label="Amarelo"
-                                                    style="background: linear-gradient(135deg, #ffffff 54%,#000000 54%)"></span>
+                                                <label for="tamanho_m" class="radio-text mr-2">
+                                                    <input type="radio" id="tamanho_m" name="tamanho">
+                                                    <span class="mask box-tamanh">
+                                                        M
+                                                    </span>
+                                                </label>
+
+                                                <label for="tamanho_g" class="radio-text mr-2">
+                                                    <input type="radio" id="tamanho_g" name="tamanho">
+                                                    <span class="mask box-tamanh">
+                                                        G
+                                                    </span>
+                                                </label>
                                             </div>
-                                        </label>
+
+                                            <div class="d-flex flex-column flex-md-row" style="font-size: 12px">
+                                                <a href="#" class="color-primary mr-3 mb-1 mb-lg-0 text-uppercase">
+                                                    <u>Descubra seu tamanho</u>
+                                                </a>
+
+                                                <a href="#" class="color-primary text-uppercase">
+                                                    <u>Tabela de medidas</u>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4">
-                                    <p class="text-uppercase mb-0">Tamanho</p>
-                                    <div class="d-flex py-1">
-                                        <!-- radios de tamanho -->
-                                        <label for="tamanho_p" class="radio-text mr-2">
-                                            <input type="radio" id="tamanho_p" name="tamanho" checked>
-                                            <span class="mask">
-                                                P
-                                            </span>
-                                        </label>
+                                <div class="col-lg-12 mb-2">
+                                    <div class="produto-pg__info-opt-item">
+                                        <div>
+                                            <img src="../images/produtos/1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="text-uppercase mb-0 font-weight-medium">Tamanho Sutiã</p>
+                                            <div class="d-flex py-1 mb-1 mb-md-2">
+                                                <!-- radios de tamanho -->
+                                                <label for="tamanho_p" class="radio-text mr-2">
+                                                    <input type="radio" id="tamanho_p" name="tamanho" checked>
+                                                    <span class="mask">
+                                                        P
+                                                    </span>
+                                                </label>
 
-                                        <label for="tamanho_m" class="radio-text mr-2">
-                                            <input type="radio" id="tamanho_m" name="tamanho">
-                                            <span class="mask box-tamanh">
-                                                M
-                                            </span>
-                                        </label>
+                                                <label for="tamanho_m" class="radio-text mr-2">
+                                                    <input type="radio" id="tamanho_m" name="tamanho">
+                                                    <span class="mask box-tamanh">
+                                                        M
+                                                    </span>
+                                                </label>
+
+                                                <label for="tamanho_g" class="radio-text mr-2">
+                                                    <input type="radio" id="tamanho_g" name="tamanho">
+                                                    <span class="mask box-tamanh">
+                                                        G
+                                                    </span>
+                                                </label>
+                                            </div>
+
+                                            <div class="d-flex flex-column flex-md-row" style="font-size: 12px">
+                                                <a href="#" class="color-primary mr-3 mb-1 mb-lg-0 text-uppercase">
+                                                    <u>Descubra seu tamanho</u>
+                                                </a>
+
+                                                <a href="#" class="color-primary text-uppercase">
+                                                    <u>Tabela de medidas</u>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                             <!-- //-->
 
                             <!-- Preço, quantidade e comprar -->
-                            <div class="row justify-content-between pt-2">
+                            <div class="row justify-content-between">
                                 <div class="col-lg-7">
                                     <div class="produto-pg__info-price">
                                         <span class="main">R$ 540</span>
@@ -316,64 +363,53 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-5 d-flex py-4 py-lg-0 mb-lg-4">
-                                    <input type="number" value="1" class="form-control form-quantity mr-2">
-                                    <button style="height: 48px" type="submit"
-                                        class="btn btn-primary text-uppercase px-5">Comprar</button>
-                                </div>
-                            </div>
-                            <!-- // -->
-
-                            <hr />
-
-                            <!-- Util links -->
-                            <div
-                                class="d-flex align-items-center justify-content-lg-between flex-column flex-lg-row produto-pg__info-links">
-                                <a href="#" class="d-block mb-3 mb-lg-0">
-                                    <i class="far fa-heart d-inline-block mr-2"></i>
-                                    <u>Favoritar</u>
-                                    <!-- <i class="fas fa-heart d-inline-block mr-2"></i> -->
-                                    <!-- <u>Favoritado</u> -->
-                                </a>
-
-                                <a href="#" class="d-block  mb-3 mb-lg-0">
-                                    <i class="fa fa-hearth-o d-inline-block mr-2"></i>
-                                    <u>Descubra seu tamanho</u>
-                                </a>
-
-                                <a href="#" class="d-block">
-                                    <i class="fa fa-hearth-o d-inline-block mr-2"></i>
-                                    <u>Tabela de medidas</u>
-                                </a>
-                            </div>
-                            <!-- // -->
-
-                            <hr />
-
-                            <form action="">
-                                <!-- Frete -->
-                                <div class="produto-pg__info-frete row pt-3 mb-5 mb-lg-0">
-                                    <div class="col-12 col-md-4 d-flex align-items-center mb-2 mb-md-0">
-                                        Calcule seu frete
+                                <div class="col-lg-5 d-flex flex-column align-items-lg-end pt-4 py-lg-0">
+                                    <div class="d-flex">
+                                        <input type="number" value="1" class="form-control form-quantity mr-2">
+                                        <button style="height: 48px" type="submit"
+                                            class="btn btn-primary text-uppercase px-5">Comprar</button>
                                     </div>
-                                    <div class="col-4 col-md-3 pr-0 pl-3 pl-md-5">
-                                        <input class="form-control form-black h-100" type="text" placeholder="96400">
-                                    </div>
-                                    <div class="col-3 col-md-2 pl-1">
-                                        <input class="form-control form-black h-100" type="text" placeholder="000">
-                                    </div>
-                                    <div class="col-4 col-md-3 d-flex align-items-center pl-0 pl-md-2">
-                                        <button class="btn btn-primary" type="submit">Calcular</button>
+
+
+                                    <!-- Util links -->
+                                    <div class="d-flex justify-content-lg-end f produto-pg__info-links">
+                                        <a href="#" class="d-block mb-3 mb-lg-0">
+                                            <i class="far fa-heart d-inline-block mr-2"></i>
+                                            <u>Favoritar</u>
+                                            <!-- <i class="fas fa-heart d-inline-block mr-2"></i> -->
+                                            <!-- <u>Favoritado</u> -->
+                                        </a>
+                                        <!-- // -->
                                     </div>
                                 </div>
                                 <!-- // -->
-                            </form>
+
+                                <form action="" method="">
+                                    <hr class="mt-0 mt-lg-2" />
+                                    <!-- Frete -->
+                                    <div class="produto-pg__info-frete row py-3 px-3 mb-4">
+                                        <div class="col-12 col-md-4 d-flex align-items-center mb-2 mb-md-0">
+                                            Calcule seu frete
+                                        </div>
+                                        <div class="col-4 col-md-3 pr-0 pl-3 pl-md-5">
+                                            <input class="form-control form-black h-100" type="text"
+                                                placeholder="96400">
+                                        </div>
+                                        <div class="col-3 col-md-2 pl-1">
+                                            <input class="form-control form-black h-100" type="text" placeholder="000">
+                                        </div>
+                                        <div class="col-4 col-md-3 d-flex align-items-center pl-0 pl-md-2">
+                                            <button class="btn btn-primary py-1" type="submit">Calcular</button>
+                                        </div>
+                                    </div>
+                                    <!-- // -->
+                                </form>
 
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section id="veja-tambem" class="section-wraper bg-light">
