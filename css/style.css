@@ -2198,6 +2198,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   .home__banner-more {
     top: 35%;
     padding-left: 85px;
+    width: 90%;
   }
 }
 
