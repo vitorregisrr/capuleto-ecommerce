@@ -490,6 +490,7 @@ u {
 }
 
 .main-nav__bottom {
+  position: relative;
   background-color: #000000;
   color: #fff;
   padding: 20px 0;
@@ -755,8 +756,7 @@ u {
 }
 
 .main-nav__item {
-  display: flex;
-  align-items: center;
+  display: block;
   color: #ffff;
   text-transform: uppercase;
   font-size: 13px;
@@ -779,16 +779,80 @@ u {
   }
 }
 
-.main-nav__item:hover {
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
-}
-
 .main-nav__item a {
   color: inherit;
+}
+
+.main-nav__item-dropdown {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  z-index: 7;
+  font-size: 14px;
+  text-transform: none;
+  text-align: left;
+  color: black;
+  background-color: #fff;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.048);
+  border-bottom: 2px solid #e6e6e6;
+  transform: translateY(100%);
+  padding: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .main-nav__item-dropdown {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    transform: none;
+  }
+  .main-nav__item-dropdown h6 {
+    font-size: 14px;
+  }
+  .main-nav__item-dropdown a {
+    color: #fff !important;
+  }
+}
+
+.main-nav__item-dropdown a {
+  color: black;
+}
+
+.main-nav__item-dropdown a:hover {
+  color: #000000;
+  font-weight: 400;
+}
+
+.main-nav__item-dropdown img {
+  width: 100%;
+}
+
+.main-nav__item:hover .main-nav__item-dropdown {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .main-nav__item:hover .main-nav__item-dropdown {
+    padding: 14px 10px 14px 15px;
+  }
 }
 
 .main-nav__toggler {

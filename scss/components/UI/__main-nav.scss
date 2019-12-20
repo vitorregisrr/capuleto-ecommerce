@@ -33,6 +33,7 @@
     }
 
     &__bottom {
+        position: relative;
         background-color: $color-primary;
         color: #fff;
         padding: 20px 0;
@@ -270,8 +271,7 @@
     }
 
     &__item {
-        display: flex;
-        align-items: center;
+        display: block;
         color: #ffff;
         text-transform: uppercase;
         font-size: 13px;
@@ -287,12 +287,76 @@
             font-size: 14px;
         }
 
-        &:hover {
-            @include scale(1.03);
-        }
-
         a {
             color: inherit;
+        }
+
+        &-dropdown{
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            visibility: hidden;
+            opacity: 0;
+            width: 100vw;
+            z-index: 7;
+            font-size: 14px;
+            text-transform: none;
+            text-align: left;
+            color: black;
+            background-color: #fff;
+            box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.048);
+            border-bottom: 2px solid rgb(230, 230, 230);
+            transform: translateY(100%);
+            padding: 40px;
+            @include transition();
+
+            @media screen and (max-width: $bp-LG){
+                position: relative;
+                bottom: unset;
+                left: unset;
+                display: block;
+                background-color: transparent;
+                box-shadow: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+                color: #fff;
+                transform: none;
+
+                h6{
+                    font-size: 14px;
+                }
+
+                a{
+                    color: #fff !important;
+                }
+            }
+
+            a{
+                color: black;
+
+                &:hover{
+                    color: $color-primary;
+                    font-weight: 400;
+                }
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &:hover{
+            .main-nav__item-dropdown{
+                visibility: visible;
+                opacity: 1;
+                height: auto;
+
+                @media screen and (max-width: $bp-LG){
+                    padding: 14px 10px 14px 15px;
+                }
+            }
         }
     }
 
