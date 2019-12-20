@@ -522,12 +522,6 @@ u {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .main-nav__bottom-offset {
-    display: none;
-  }
-}
-
 .main-nav__utils {
   position: relative;
   display: flex;
@@ -600,7 +594,7 @@ u {
 }
 
 .main-nav__utils-search-mobile input {
-  width: 200px;
+  width: 170px;
   border: none;
   color: lightgray;
   font-size: 14px;
@@ -878,6 +872,25 @@ u {
   }
 }
 
+.main-nav .sticky-brand {
+  display: none;
+  width: 140px;
+  margin-top: 1px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-nav .sticky-brand {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav .sticky-brand {
+    width: 100px;
+    margin-top: 4px;
+  }
+}
+
 .main-nav.sticky {
   animation: fadeInDown 0.5s;
 }
@@ -887,6 +900,22 @@ u {
   padding: 0;
   overflow: hidden;
   transition: none;
+}
+
+.main-nav.sticky .sticky-brand {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .main-nav.sticky .main-nav__utils {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-nav.sticky .main-nav__bottom-ofset {
+    width: 25%;
+  }
 }
 
 .form-control {

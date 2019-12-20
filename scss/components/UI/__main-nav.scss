@@ -56,10 +56,6 @@
             @media screen and (max-width: $bp-XL) {
                 width: 0%;
             }
-
-            @media screen and (max-width: $bp-LG) {
-                display: none;
-            }
         }
     }
 
@@ -121,7 +117,7 @@
             }
 
             input {
-                width: 200px;
+                width: 170px;
                 border: none;
                 color: rgb(211, 211, 211);
                 font-size: 14px;
@@ -380,6 +376,21 @@
         }
     }
 
+    .sticky-brand{
+        display: none;
+        width: 140px;
+        margin-top: 1px;
+
+        @media screen and (min-width: $bp-LG) and (max-width: $bp-XL){
+            display: none !important;
+        }
+        
+        @media screen and (max-width: $bp-MD){
+            width: 100px;
+            margin-top: 4px;
+        }
+    }
+
     &.sticky {
         animation: fadeInDown 0.5s;
 
@@ -388,6 +399,22 @@
             padding: 0;
             overflow: hidden;
             transition: none;
+        }
+
+        .sticky-brand{
+            display: block;
+        }
+
+        .main-nav__utils{
+            @media screen and (max-width: $bp-LG){
+                justify-content: flex-end;
+            }
+        }
+
+        .main-nav__bottom-ofset{
+            @media screen and (max-width: $bp-LG){
+                width: 25%;
+            }
         }
     }
 }
